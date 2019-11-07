@@ -27,3 +27,14 @@ ALTER TABLE produto CHANGE produto_nome 'produto_nome'CHAR(41) NOT NULL;
 
 //Altera na table estado estado_nome para VARCHAR(26)
 ALTER TABLE estado CHANGE estado_nome 'estado_nome'VARCHAR(26) NOT NULL;
+
+.: DELETE :.
+
+//Deleta da tabela estado estado_nome quando igual a 'São Paulo'
+DELETE FROM estado WHERE estado_nome = 'São Paulo';
+
+//Deleta da tabela cliente cliente_nome quando igual a 'Gabriel'
+DELETE FROM cliente WHERE cliente_nome = 'Gabriel';
+
+//Deleta da tabela produto produto_nome quando igual a 'Cama'
+DELETE FROM produto WHERE produto_nome = 'Cama';
